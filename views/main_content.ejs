@@ -1,0 +1,101 @@
+  <!--(2)メイン-->
+  <div class="main_container">
+    <!--(2A)上段ランプ-->
+    <div class="lamp_up">
+      <div>ミキサ</div>
+      <div>アジテータ</div>
+      <div>給水ポンプ1</div>
+      <div>給水ポンプ2</div>
+      <div>原料4</div>
+      <div>原料5</div>
+      <div>ｺﾝﾌﾟﾚｯｻ</div>
+      <div>給水弁1</div>
+      <div>給水弁2</div>
+      <div>排出弁</div>
+      <div>ｾﾒﾝﾄｻｲﾛA</div>
+      <div>ｾﾒﾝﾄｻｲﾛB</div>
+      <div>ﾍﾞﾝﾄﾅｲﾄｻｲﾛ</div>
+      <div>洗浄ポンプ</div>
+    </div><!--(2A)-->
+    <!--(2B)下段ランプ-->
+    <div class="lamp_down">
+      <div>手動</div>
+      <div>自動</div>
+      <div>自動可</div>
+      <div>サイロA使用</div>
+      <div>サイロB使用</div>
+      <div></div>
+      <div></div>
+      <div>自動計量</div>
+      <div>一時停止</div>
+      <div>アジテータ満</div>
+      <div></div>
+      <div>配合A</div>
+      <div>配合B</div>
+      <div>配合C</div>
+    </div><!--(2B)-->
+
+    <!--(2C)モニタ-->
+    <div class="monitor">
+      <!--(2C)-1配合-->
+      <div class="haigo">
+        <!--1行目-->
+        <div class="monitor_title">銘柄</div>
+        <div class="monitor_title">設定値(kg)</div>
+        <div class="monitor_title">計量値(kg)</div>
+        
+        <!--2行目-->
+        <div id="meigara1">水</div>
+        <div id="h1_settei">0</div>
+        <div id="h1_keiryo">0</div>
+        
+        <!--3行目-->
+        <div id="meigara2">セメント</div>
+        <div id="h2_settei">0</div>
+        <div id="h2_keiryo">0</div>
+        
+        <!--4行目-->
+        <div id="meigara3">ベントナイト</div>
+        <div id="h3_settei">0</div>
+        <div id="h3_keiryo">0</div>
+
+        <!--5行目-->
+        <div id="meigara4">原料4</div>
+        <div id="h4_settei">0.0</div>
+        <div id="h4_keiryo">0.0</div>
+
+        <!--6行目-->
+        <div id="meigara5">原料5</div>
+        <div id="h5_settei">0.0</div>
+        <div id="h5_keiryo">0.0</div>
+      </div><!--(2C)-1-->
+
+      <!--(2C)-2重量-->
+      <div class="juryo">
+        <div class="monitor_title">ミキサ</div>
+        <div id="mix_juryo">0</div>
+        <div class="monitor_title">原料4</div>
+        <div id="gn4_juryo">0</div>
+        <div class="monitor_title">原料5</div>
+        <div id="gn5_juryo">0</div>
+      </div><!--(2C)-2-->
+      
+      <!--(2C)-3バッチ-->
+      <div class="batch">
+        <div class="monitor_title">設定バッチ</div>
+        <div id="batch_settei">0</div>
+        <div class="monitor_title">測定バッチ</div>
+        <div id="batch_sokutei">0</div>
+      </div><!--(2C)-3-->
+    </div><!--(2C)-->
+    <div class="canvas_draw">
+      <!-- <canvas id="canvas_agitator" width="200" height="113"> -->
+        <!--canvasが使えないときの処理-->
+        <!-- Canvas not supported. -->
+      <!-- </canvas> -->
+      <!-- <canvas id="canvas_mixer" width="200" height="113"> -->
+        <!--canvasが使えないときの処理-->
+        <!-- Canvas not supported. -->
+      <!-- </canvas> -->
+    </div><!--(2)-->
+  </div>

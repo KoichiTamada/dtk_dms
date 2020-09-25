@@ -1,0 +1,33 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ul{
+  display: flex;
+}
+ul li{
+  list-style: none;
+  
+}
+
+ul li a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 80px;
+  text-align: center;
+}
+ul li a:visited{
+  color: white;
+}
+ul li a:hover{
+  color:orange;
+  background-color: white;
+  text-decoration: none;
+  
+}
+
+
+.menu_menu{
+  background-color: orange;
+}
