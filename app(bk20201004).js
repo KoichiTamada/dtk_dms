@@ -3,10 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var session = require('express-session');
+var expressSession = require('express-session');
 
-// var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/index');
 var monitorRouter = require('./routes/monitor');
 var settingRouter = require('./routes/setting');
 var operationRouter = require('./routes/operation');
@@ -28,24 +27,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// セッションの追加
-let ses_opt = {
-  secret:'my secret',
-  resave:false,
-  saveUninitialized:false,
-  cookie:{maxAge:60*60*1000}
-};
-app.use(session(ses_opt));
-
-// app.use('/', indexRouter);  
-app.use('/users', usersRouter);  
+app.use('/', indexRouter);  
 app.use('/monitor', monitorRouter);
 app.use('/setting', settingRouter);
 app.use('/operation', operationRouter);
 app.use('/logdata', logdataRouter);
 app.use('/alarm', alarmRouter);
 app.use('/ajax', ajaxRouter);
-
 app.use('/show_user', show_userRouter);
 app.use('/update_user', update_userRouter);
 

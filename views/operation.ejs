@@ -7,24 +7,19 @@
 	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
 
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="/stylesheets/monitor_show.css">
-    <link rel="stylesheet" href="/stylesheets/monitor_draw.css">
-
+    <link rel="stylesheet" href="/stylesheets/footer.css">
 	<link rel="shortcut icon" type="image/png" href="/images/icon.png" />
     <script src="/javascripts/jquery.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
-    <script src="/javascripts/read_text.js"></script>
-    <script src="/javascripts/monitor_draw.js"></script>
-	<style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');     
+    <style>
     </style>
     <title><%= title %></title>	
 </head>
-<body style="overflow-x: hidden;overflow-y: hidden;">
+<body style="overflow-y: hidden;overflow-x: hidden;">
 <div class="container-fruid">
     <!-- ヘッダー -->
     <header>
-    <div class="row" style="background-color: orange; height: 28px;" >
+    <div class="row" style="background-color: orange; height: 28px;">
         <div class="col-sm-12 m-0 p-0">
             <div><%- include('header_content'); %></div>
         </div>
@@ -33,19 +28,8 @@
     <!-- メイン -->
     <main>
     <div class="row">
-        <div class="col-sm-8" style="border: 1px solid darkblue;">
-            <div><%- include('monitor_show_content'); %></div>
-        </div>
-        <div class="col-sm-4" style="border: 1px solid darkblue;">
-            <div><%- include('monitor_draw_content'); %></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-10">
-            <div style="color: white;">BLANK</div>
-        </div>
-        <div class="col-sm-2">
-            <div><%- include('monitor_test_switch'); %></div>
+        <div class="col-sm-12" style="border: 1px solid darkblue;">
+            <p style="font-size: 30px;text-align: center;">ここに操作が入る</p>
         </div>
     </div>
     </main>

@@ -1,0 +1,352 @@
+.monitor_main{
+  font-size: 16px;
+  text-align: center;
+}
+
+.monitor_content{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+}
+
+/* 銘柄タイトル */
+#meigara_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+}
+
+/* 【配合タイトル】 */
+/*設定値タイトル */
+#settei_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: gray;
+  color: white
+}
+
+/*計量値タイトル */
+#keiryo_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:gray;
+  color: white;
+}
+
+/*ミキサ重量タイトル */
+#mixer_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+}
+
+/*原料4重量タイトル */
+#genryo4_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:gray;
+  color: white;
+}
+
+/*原料5重量タイトル */
+#genryo5_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+}
+
+/*設定バッチタイトル */
+#settei_batch_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+}
+
+/*測定バッチタイトル */
+#genzai_batch_title{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+}
+
+/* 【銘柄】 */
+/*銘柄1*/
+#meigara1{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: lightgray;
+  color: black;
+}
+
+/*銘柄2*/
+#meigara2{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: lightgray;
+  color: black;
+}
+
+/*銘柄3*/
+#meigara3{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: lightgray;
+  color: black;
+}
+
+/*銘柄4*/
+#meigara4{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: lightgray;
+  color: black;
+}
+
+/*銘柄5*/
+#meigara5{
+  padding: 10px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color: lightgray;
+  color: black;
+}
+
+/* 設定値 */
+/*設定値1*/
+#haigo_settei_10{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 255, 0);
+  color: black;
+  text-align: right;
+  font-size: 28px;
+}
+/*設定値2*/
+#haigo_settei_11{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 255, 0);
+  color: black;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*設定値3*/
+#haigo_settei_12{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 255, 0);
+  color: black;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*設定値4*/
+#haigo_settei_13{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 255, 0);
+  color: black;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*設定値5*/
+#haigo_settei_14{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 255, 0);
+  color: black;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*計量値*/
+/*計量値1*/
+#h1_keiryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+/*計量値2*/
+#h2_keiryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+/*計量値3*/
+#h3_keiryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*計量値4*/
+#h4_keiryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*計量値5*/
+#h5_keiryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*重量*/
+/*ミキサ重量*/
+#mixer_juryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*原料4重量*/
+#genryo4_juryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*原料5重量*/
+#genryo5_juryo{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*設定バッチ数*/
+#settei_batch{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}
+
+/*現在バッチ数*/
+#sokutei_batch{
+  padding: 4px 2px 1px 2px;
+  margin: 2px 2px;
+  border: 1px solid black;
+  height: 40px;
+  font-weight: bold;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  text-align: right;
+  font-size: 28px;
+}

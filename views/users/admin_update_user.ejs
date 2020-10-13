@@ -11,60 +11,55 @@
 	<link rel="shortcut icon" type="image/png" href="/images/icon.png" />
   <script src="/javascripts/jquery.min.js"></script>
   <script src="/javascripts/bootstrap.min.js"></script>
-  <script src="/javascripts/read_text.js"></script>
 	<style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');     
   </style>
   <title><%= title %></title>	
 </head>
-<body style="overflow-x: hidden;overflow-y: hidden;">
+<body style="overflow-x: hidden;">
 <div class="container-fruid">
     <!-- ヘッダー -->
     <header>
-    <div class="row" style="background-color: orange; height: 28px;" >
-        <div class="col-sm-12 m-0 p-0">
-          <div class="row">
-            <div class="col-sm-3 h-25" id="menu_title">
-              <div class="px-0 py-0 mx-0 my-0">
-                DMS1500 Remote monitor
-              </div>
-            </div>
+      <div class="row" style="background-color: orange; height: 28px;">
+          <div class="col-sm-12 m-0 p-0">
+              <div><%- include('../header_content _for_users'); %></div>
           </div>
-        </div>
-    </div>
-    </header>
+      </div>
+      </header>
     <!-- メイン -->
     <main>
-    <div class="row">
-      <div class="col-sm-12">
-          <p style="font-size: 30px;text-align: center;">ログイン</p>
+    <div class="row justify-content-center">
+      <div class="col-sm-7">
+          <p style="font-size: 30px;text-align: center;">管理(編集)</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-5 mt-3">
+        <div style="color: white;">BLANK</div>
+      </div>
+      <div class="col-sm-3 mt-3">
+        <button onclick="location.href='admin'" class="btn btn-outline-primary p-2 mx-2"
+          style="width: 120px;">新規登録</button>
+        <button onclick="location.href='admin'"  class="btn btn-outline-primary p-2 mx-2"
+          style="width: 120px;">削除</button>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-sm-2 mt-5 mb-5">
-        <form action="/" method="post">
+        <form method="post" action="/users/admin">
           <div class="form-group">
-            <lavel for "userID">ID</lavel>
-            <input type="text" class="form-control" id="user_id" name="userID">
-            <br>
-            <lavel for "userPass">パスワード</lavel>
-            <input type="password" class="form-control" id="user_pass" name="userPass">
-            <label for "userMessage">メッセージ</label>
-            <input type="text" class="form-control" id="user_message" name="userMessage">
-
-            <br>
+            <lavel for "account">アカウント</lavel>
+            <input type="text" class="form-control" id="account" name="account">
+            <label for "password">パスワード</label>
+            <input type="pasword" class="form-control" id="password" name="password">
+            <lavel for "role">権限</lavel>
+            <input type="text" class="form-control" id="role" name="role">
             <input type="submit" class="btn btn-primary">
           </div>
         </form>
       </div>
     </div>
     <hr>
-    <p><%= data %></p>
-    <ol>
-      <% for(let i in data){%>
-        <li><%- data[i] %></li>
-      <% } %>
-    </ol>
     <!-- BLANK -->
     <div class="row my-5 py-5">
       <div class="col-sm-12 my-2 py-5" height="230px">
@@ -76,7 +71,7 @@
     <footer>
     <div class="row">
         <div class="col-sm-12 mt-5" style="border: 1px solid darkblue;">
-            <div><%- include('footer_content'); %></div>
+            <div><%- include('../footer_content'); %></div>
         </div>
     </div>
     </footer>

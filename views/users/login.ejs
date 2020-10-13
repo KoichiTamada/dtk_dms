@@ -11,7 +11,6 @@
 	<link rel="shortcut icon" type="image/png" href="/images/icon.png" />
   <script src="/javascripts/jquery.min.js"></script>
   <script src="/javascripts/bootstrap.min.js"></script>
-  <script src="/javascripts/read_text.js"></script>
 	<style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');     
   </style>
@@ -42,29 +41,23 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-sm-2 mt-5 mb-5">
-        <form action="/" method="post">
+        <form method="post" action="/users/login">
           <div class="form-group">
-            <lavel for "userID">ID</lavel>
-            <input type="text" class="form-control" id="user_id" name="userID">
+            <lavel for "account">アカウント</lavel>
+            <input type="text" class="form-control" id="account" name="account"
+              placeholder="ここにアカウントを入力">
             <br>
-            <lavel for "userPass">パスワード</lavel>
-            <input type="password" class="form-control" id="user_pass" name="userPass">
-            <label for "userMessage">メッセージ</label>
-            <input type="text" class="form-control" id="user_message" name="userMessage">
-
+            <lavel for "password">パスワード</lavel>
+            <input type="password" class="form-control" id="password" name="password"
+              placeholder="ここにパスワードを入力">
+            
             <br>
             <input type="submit" class="btn btn-primary">
           </div>
         </form>
       </div>
     </div>
-    <hr>
-    <p><%= data %></p>
-    <ol>
-      <% for(let i in data){%>
-        <li><%- data[i] %></li>
-      <% } %>
-    </ol>
+
     <!-- BLANK -->
     <div class="row my-5 py-5">
       <div class="col-sm-12 my-2 py-5" height="230px">
@@ -76,7 +69,7 @@
     <footer>
     <div class="row">
         <div class="col-sm-12 mt-5" style="border: 1px solid darkblue;">
-            <div><%- include('footer_content'); %></div>
+            <div><%- include('../footer_content'); %></div>
         </div>
     </div>
     </footer>

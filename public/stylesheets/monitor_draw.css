@@ -1,0 +1,105 @@
+/* (1) */
+#canvas_mixer{
+  background-color:white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (2) */
+#canvas_agitator{
+  background-color:white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (3) */
+#canvas_cement_sailoA{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (4) */
+#canvas_cement_sailoB{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (5) */
+#canvas_bent_sailo{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (6) */
+#canvas_w_p1{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (7) */
+#canvas_w_p2{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (8) */
+#canvas_gn4_p{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (9) */
+#canvas_gn5_p{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (10) */
+#canvas_gn4_bin{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (11) */
+#canvas_gn5_bin{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (12) */
+#canvas_mixer_haisyutsu1{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (13) */
+#canvas_mixer_haisyutsu2{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (14) */
+#canvas_gn5_tonyu{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (15) */
+#canvas_gn4_haisyutsu{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* (16) */
+#canvas_gn5_haisyutsu{
+  background-color: white;
+  /* border: 1px solid greenyellow; */
+}
+
+/* .canvas_draw{
+  display:grid;
+  grid-template-columns: 200px 200px;
+} */
+
+.canvas_blank{
+  background-color:white;
+  /* border: 1px solid greenyellow; */
+}

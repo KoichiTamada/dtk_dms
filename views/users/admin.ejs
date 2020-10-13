@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/monitor_show.css">
+  <link rel="stylesheet" href="/stylesheets/monitor_draw.css">
+	<link rel="shortcut icon" type="image/png" href="/images/icon.png" />
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');     
+  </style>
+  <title><%= title %></title>	
+</head>
+<body style="overflow-x: hidden;">
+<div class="container-fruid">
+    <!-- ヘッダー -->
+    <header>
+      <div class="row" style="background-color: orange; height: 28px;">
+          <div class="col-sm-12 m-0 p-0">
+              <div><%- include('../header_content _for_users'); %></div>
+          </div>
+      </div>
+      </header>
+    <!-- メイン -->
+    <main>
+    <div class="row justify-content-center">
+      <div class="col-sm-7">
+          <p style="font-size: 30px;text-align: center;">管理画面【アカウント一覧】</p>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">アカウント</th>
+                <th scope="col">パスワード</th>
+                <th scope="col">権限</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(var i in content) { %>
+              <% var obj = content[i] %>
+              <tr>
+                <th scope="row"><%= i %></th>
+                <td><%= obj.account %></td>
+                <td><%= obj.password %></td>
+                <td><%= obj.role %></td>
+              </tr>
+            </tbody>
+              <% } %>
+        </table>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-5 mt-3">
+        <div style="color: white;">BLANK</div>
+      </div>
+      <div class="col-sm-4 mt-3">
+        <button onclick="location.href='admin_add_user'" class="btn btn-outline-primary p-1 mx-1"
+          style="width: 120px;">新規登録</button>
+        <button onclick="location.href='admin_update_user'" class="btn btn-outline-primary p-1 mx-1"
+          style="width: 120px;">編集</button>
+        <button onclick="location.href='admin_delete_user'"  class="btn btn-outline-primary p-1 mx-1"
+          style="width: 120px;">削除</button>
+      </div>
+    </div>
+    
+    <!-- BLANK -->
+    <div class="row my-5 py-5">
+      <div class="col-sm-12 my-2 py-5" height="230px">
+        <div style="color: white;">BLANK</div>
+      </div>
+    </div>
+    </main>
+    <!-- フッター -->
+    <footer>
+    <div class="row">
+        <div class="col-sm-12 mt-5" style="border: 1px solid darkblue;">
+            <div><%- include('../footer_content'); %></div>
+        </div>
+    </div>
+    </footer>
+</div><!--containerの終わり-->
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/monitor_show.css">
+  <link rel="stylesheet" href="/stylesheets/monitor_draw.css">
+	<link rel="shortcut icon" type="image/png" href="/images/icon.png" />
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');     
+  </style>
+  <title><%= title %></title>	
+</head>
+<body style="overflow-x: hidden;">
+<div class="container-fruid">
+    <!-- ヘッダー -->
+    <header>
+      <div class="row" style="background-color: orange; height: 28px;">
+          <div class="col-sm-12 m-0 p-0">
+              <div><%- include('../header_content _for_users'); %></div>
+          </div>
+      </div>
+      </header>
+    <!-- メイン -->
+    <main>
+    <div class="row justify-content-center">
+      <div class="col-sm-7">
+          <p style="font-size: 30px;text-align: center;">管理画面【新規登録】</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-2 mt-5 mb-5">
+        <form method="post" action="admin_add_user">
+          <div class="form-group">
+            <lavel for "account">アカウント</lavel>
+            <input type="text" class="form-control" id="account" name="account"
+              placeholder="ここにアカウントを入力">
+            <label for "password">パスワード</label>
+            <input type="pasword" class="form-control" id="password" name="password"
+              placeholder="ここにパスワードを入力">
+            <div class="btn active pt-2 pb-0 px-0">
+              <input type="radio" name="radio" id="rd-admin" class="form-input m-0 p-0" checked autocomplete="off">
+                <label for "rd-admin" class="active">管理者</label>
+            </div>
+            <div class="btn pt-2 pb-0 px-0">
+              <input type="radio" name="radio" id="rd-user" class="form-input m-0 p-0"
+                checked autocomplete="off">
+              <label for "rd-user">ユーザー</label>
+            </div>
+            <br>
+            <input type="submit" class="btn btn-primary" value="登録">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- BLANK -->
+    <div class="row my-4 py-5">
+      <div class="col-sm-12 my-2 py-5" height="230px">
+        <div style="color: white;">BLANK</div>
+      </div>
+    </div>
+    </main>
+    <!-- フッター -->
+    <footer>
+    <div class="row">
+        <div class="col-sm-12 mt-5" style="border: 1px solid darkblue;">
+            <div><%- include('../footer_content'); %></div>
+        </div>
+    </div>
+    </footer>
+</div><!--containerの終わり-->
+</body>
+</html>

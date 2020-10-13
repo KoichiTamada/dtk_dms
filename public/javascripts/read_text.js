@@ -63,7 +63,7 @@ $(function(){
       bts_data2 = bts_data.substr(4,7);
       btp_data2 = btp_data.substr(4,7);
       
-      
+      /*以下データ確認時に復活させること
       console.log(bit_data);
       console.log(alm_data);
       console.log(mgr_data);
@@ -103,13 +103,13 @@ $(function(){
       console.log(bts_data2);
       console.log(btp_data2);
       console.log('------');
-
+      */
       //設定値
-      $('#h1_settei').text(st1_data2);
-      $('#h2_settei').text(st2_data2);
-      $('#h3_settei').text(st3_data2);
-      $('#h4_settei').text(st4_data2);
-      $('#h5_settei').text(st5_data2);
+      $('#haigo_settei_10').text(st1_data2);
+      $('#haigo_settei_11').text(st2_data2);
+      $('#haigo_settei_12').text(st3_data2);
+      $('#haigo_settei_13').text(st4_data2);
+      $('#haigo_settei_14').text(st5_data2);
       
       //計量値
       $('#h1_keiryo').text(kr1_data2);
@@ -119,13 +119,14 @@ $(function(){
       $('#h5_keiryo').text(kr5_data2);
       
       //計量値
-      $('#mix_juryo').text(mix_juryo2);
-      $('#gn4_juryo').text(gn4_juryo2);
-      $('#gn5_juryo').text(gn5_juryo2);
+      $('#mixer_juryo').text(mix_juryo2);
+      $('#genryo4_juryo').text(gn4_juryo2);
+      $('#genryo5_juryo').text(gn5_juryo2);
       
       //バッチ
-      $('#batch_settei').text(bts_data2);
-      $('#batch_sokutei').text(btp_data2);
+      $('#settei_batch').text(bts_data2);
+      $('#sokutei_batch').text(btp_data2);
     });
   },3000);
+//$(function())終了  
 });
